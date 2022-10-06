@@ -2,6 +2,7 @@ package com.qapital.savings.rule;
 
 
 import com.qapital.savings.rule.validator.ValidSavingGoalIds;
+import com.qapital.savings.rule.validator.ValidStatus;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -25,6 +26,7 @@ public class SavingsRule {
     @ValidSavingGoalIds
     private List<Long> savingsGoalIds;
     private RuleType ruleType;
+    @ValidStatus
     private Status status;
 
     public SavingsRule() {
