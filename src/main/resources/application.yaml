@@ -1,0 +1,12 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  security:
+    user:
+      name: user
+      password: password
+      roles: user
+
